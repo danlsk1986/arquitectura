@@ -50,7 +50,7 @@ img {
 .contenedor {
     max-width: 120rem;
     margin: 0 auto;
-    width: 100%;
+    width: 90%;
 }
 
 .btn {
@@ -243,4 +243,30 @@ img {
 .contenido-nosotros h2, 
 .contenido-nosotros p {
     margin-bottom: 1rem;
+}
+
+/* Modelos */
+
+.modelo {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+.contenido-modelo {
+    padding: 5rem;
+    background-color: var(--blanco);
+}
+
+.basico {
+    background-image: url(../img/modelo_basico.jpg);
+}
+
+.premier {
+    background-image: url(../img/modelo_premier.jpg);
+}
+
+.elite {
+    background-image: url(../img/modelo_elite.jpg);
 }
