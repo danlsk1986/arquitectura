@@ -251,8 +251,10 @@ img {
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     background-repeat: no-repeat;
-    background-position: bottom center;
+    background-position: bottom center;  
+    margin-bottom: 5rem;  
 }
+
 
 main h2 {
     margin: 5rem 0;
@@ -287,6 +289,28 @@ main h2 {
     background-image: url(../img/modelo_premier.jpg);
 }
 
+@media(min-width: 768px){
+ .premier {
+    background-position: top left;
+ }
+
+ .premier .contenido-modelo {
+     grid-column: 2 / 3;
+     padding: 2rem;
+ }
+}
+
 .elite {
-    background-image: url(../img/modelo_elite.jpg);
+    background-image: url(../img/modelo_elite.jpg);    
+}
+
+@media(min-width: 768px){
+ .elite {
+     background-position: top right;
+ }
+
+ .elite .contenido-modelo {
+     padding: 2rem 2rem 2rem 0;
+ }
+
 }
